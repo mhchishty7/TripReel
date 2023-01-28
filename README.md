@@ -1,7 +1,6 @@
 # 📽 Trip Reel Project
 
-A mobile movie app that provides relevant movie information such as title, poster, runtime, plot, metascore, and where to watch. This app was built from scratch collaboratively with a team of six coders, which allowed us to learn agile development methodologies and implement feature and bug fixes using the git branch workflow and pull requests.
-
+Introducing Tripreel - the ultimate movie destination! Discover all the info you need on your favorite films including ratings, runtime, plot, genres and where to watch. With a user-friendly interface, powered by Omdb and Utelly API, and interactive features using HTML, CSS, Foundation, JavaScript and jQuery. Whether you're a movie buff or just looking for a new film, Tripreel has got you covered. Explore now!
 ## Deployment
 
 Deployed Website: https://tripreel.vercel.app/
@@ -18,5 +17,3 @@ Deployed Website: https://tripreel.vercel.app/
   - jQuery
   - Omdb API
   - Utelly API
-
-
