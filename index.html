@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- As of 5/28/2020 -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripReel</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="foundation-6.6.3-complete/css/foundation.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <a class="myLogo" href="index.html">
+            <img src="Assets/TripReelLogo.png">
+        </a>
+    </div>
+    <div class="mainSearchMargin" class="container">
+        <form>
+            <label>
+                <h1>Search</h1>
+            </label>
+            <input id="search-input" class="mainSearch" type="input" placeholder="Type a movie...">
+
+            <button id="search-button" class="searchButton" type="submit"><img src="Assets/Eyeglass.png"></button>
+        </form>
+    </div>
+
+    <!--Display Searched Movie Information-->
+    <div class="movieResult" id="movie-view" class="container">
+        <ul id="movie-list"></ul>
+    </div>
+
+    <div class="mainSearchMargin" id="genres" class="container">
+    </div>
+
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+        integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script src="carousel.js"></script>
+
+</body>
+
+
+
+</html>

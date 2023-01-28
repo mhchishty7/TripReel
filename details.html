@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- As of 5/28/2020 -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripReel</title>
+    <!-- Compressed CSS -->
+    <link rel="stylesheet" href="foundation-6.6.3-complete/css/foundation.css">
+
+    <style>
+        li {
+            display: inline-block;
+            list-style-type: none;
+            padding-right: 20px;
+            margin: 20px;
+            background-size: cover;
+            background-position: center;
+        }
+        .brightness { filter: brightness(0.25); }
+
+        .utellyB {
+            border-radius: 8px;
+            background-color: lightgray;
+            padding: 15px;
+        }
+
+        ul {
+            text-align: -webkit-center;
+        }
+
+        /* Center the loader */
+        #loader {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            z-index: 1;
+            width: 150px;
+            height: 150px;
+            margin: -75px 0 0 -75px;
+            border: 16px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid #3498db;
+            width: 120px;
+            height: 120px;
+            -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+        }
+
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Add animation to "page content" */
+        .animate-bottom {
+            position: relative;
+            -webkit-animation-name: animatebottom;
+            -webkit-animation-duration: 1s;
+            animation-name: animatebottom;
+            animation-duration: 1s
+        }
+
+        @-webkit-keyframes animatebottom {
+            from {
+                bottom: -100px;
+                opacity: 0
+            }
+
+            to {
+                bottom: 0px;
+                opacity: 1
+            }
+        }
+
+        @keyframes animatebottom {
+            from {
+                bottom: -100px;
+                opacity: 0
+            }
+
+            to {
+                bottom: 0;
+                opacity: 1
+            }
+        }
+    </style>
+</head>
+<a class="backNav" href="index.html"><img class="backArrow" src="Assets/BackArrow.png">Back to Search</a>
+<a class="logo" href="index.html">
+    <img src="Assets/TripReelLogo.png">
+</a>
+<div>
+    <img class="headerPic" style="visibility:hidden">
+</div>
+
+<body>
+
+    <div id="loader"></div>
+    <div id="main" class="text" class="grid-x grid-margin-x" style="visibility:hidden">
+        <div class="cell medium-6 large-4">
+
+
+        </div>
+        <div id="streaming">
+            <h4>Where to Watch?</h4>
+            <hr>
+        </div>
+        <hr>
+
+    </div>
+
+
+    <!-- jQuery must be imported before Foundation -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <!-- Compressed JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+        integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+    <script src="details.js"></script>
+    <script src="Wheretowatch.js"></script>
+
+</body>
+
+</html>

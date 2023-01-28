@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+.flickity-page-dots {
+    visibility:hidden;
+}
+.carousel1 {
+    background: transparent;
+}
+.myLogo{
+    position: absolute;
+    width: 30%;
+    top: 28px;
+    right: 35px;
+    color: white;
+}
+.flickity-prev-next-button.previous {
+    left: 10px;
+    background-color: transparent;
+}
+.flickity-prev-next-button.next {
+    right: 10px;
+    background-color: transparent;
+}
+.flickity-button-icon {
+    background-color: transparent;
+    color: white;
+}
+
+.carousel-cell {
+  width: 150px;
+  height: 200px;
+  margin: 10px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: img;
+  line-height: 150px;
+  font-size: 80px;
+  color: white;
+}
